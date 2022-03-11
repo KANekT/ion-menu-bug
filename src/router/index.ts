@@ -8,7 +8,12 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/folder/:id',
-    component: () => import ('../views/FolderPage.vue')
+    component: () => import ('../views/FolderPage.vue'),
+    meta: { layout: 'menu' },
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    component: () => import ('../views/NotFound.vue'),
   }
 ]
 
