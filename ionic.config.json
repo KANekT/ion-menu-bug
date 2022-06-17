@@ -1,7 +1,0 @@
-{
-  "name": "ion-menu",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue"
-}
